@@ -1,4 +1,4 @@
-package org.gnomiki.exceptions;
+package net.micwin.yajl.core.exceptions;
 
 /**
  * Thrown when execution passes code that was not yet implemented. This is a

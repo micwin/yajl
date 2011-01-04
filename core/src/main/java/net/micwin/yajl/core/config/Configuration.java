@@ -1,4 +1,4 @@
-package org.gnomiki.config;
+package net.micwin.yajl.core.config;
 
 /**
  * A configuration class interface dynamically loaded on startup.

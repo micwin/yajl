@@ -1,11 +1,12 @@
-package org.gnomiki.plugins;
+package net.micwin.yajl.core.plugins;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import net.micwin.yajl.core.config.Configuration;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.gnomiki.config.Configuration;
 
 /**
  * Configure this with spring by inserting a Configuration to property config.

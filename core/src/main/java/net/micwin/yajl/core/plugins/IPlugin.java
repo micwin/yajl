@@ -1,4 +1,4 @@
-package org.gnomiki.plugins;
+package net.micwin.yajl.core.plugins;
 
 /**
  * A client plugin.

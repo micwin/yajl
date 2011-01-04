@@ -1,4 +1,4 @@
-package org.gnomiki.config.impl;
+package net.micwin.yajl.core.config.impl;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -6,9 +6,10 @@ import java.net.MalformedURLException;
 import java.util.Properties;
 import java.util.StringTokenizer;
 
+import net.micwin.yajl.core.config.Configuration;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.gnomiki.config.Configuration;
 
 /**
  * Implements a configuration that configures from System Properties.
