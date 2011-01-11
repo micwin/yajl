@@ -1,5 +1,6 @@
-package net.micwin.yajl.core.instances;
+package net.micwin.yajl.core.instances.impl;
 
+import net.micwin.yajl.core.instances.impl.DefaultFactory;
 import junit.framework.TestCase;
 
 public class DefaultFactoryTest extends TestCase {

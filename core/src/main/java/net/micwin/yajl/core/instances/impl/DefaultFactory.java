@@ -1,7 +1,9 @@
-package net.micwin.yajl.core.instances;
+package net.micwin.yajl.core.instances.impl;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+
+import net.micwin.yajl.core.instances.Factory;
 
 /**
  * A Factory that creates instances of class T by calling the default
