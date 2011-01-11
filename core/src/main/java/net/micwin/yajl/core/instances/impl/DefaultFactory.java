@@ -2,6 +2,7 @@ package net.micwin.yajl.core.instances.impl;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.util.Collection;
 
 import net.micwin.yajl.core.instances.Factory;
 
