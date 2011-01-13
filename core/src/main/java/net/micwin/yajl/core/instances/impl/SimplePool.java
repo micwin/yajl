@@ -31,7 +31,7 @@ public class SimplePool<T> implements Pool<T> {
 		if (free.size() < 1) {
 			rv = factory.create();
 		} else {
-			rv = free.get(0);
+			rv = free.get(free.size()-1);
 		}
 		return rv;
 	}

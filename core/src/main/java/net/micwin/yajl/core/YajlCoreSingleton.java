@@ -1,7 +1,6 @@
 package net.micwin.yajl.core;
 
 import net.micwin.yajl.core.config.Configuration;
-import net.micwin.yajl.core.config.impl.PropertiesConfigImpl;
 
 /**
  * This is a singleton for convenient access to some elements of yajl-core. Note
