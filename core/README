@@ -1,1 +1,2 @@
-This module contains java classes that are helpful but dont have dependencies neither to gui nor to server or external libs. core is intended to run on ALL platforms providing java 1.6.
+This module contains java classes that are helpful but dont have dependencies neither to gui nor to 
+server or external libs. core is intended to run on ALL platforms including generics and auto boxing (at least jdk 1.5, 1.6). 
