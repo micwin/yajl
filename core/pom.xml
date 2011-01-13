@@ -4,7 +4,7 @@
 
 
 	<groupId>net.micwin</groupId>
-	<version>0.8-SNAPSHOT</version>
+	<version>0.8</version>
 	<artifactId>yajl-core</artifactId>
 	<packaging>jar</packaging>
 
