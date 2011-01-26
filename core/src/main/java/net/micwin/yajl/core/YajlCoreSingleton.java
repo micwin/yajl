@@ -1,5 +1,9 @@
 package net.micwin.yajl.core;
 
+import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
 import net.micwin.yajl.core.config.Configuration;
 
 /**
@@ -22,20 +26,46 @@ public class YajlCoreSingleton {
 
 	static {
 
-		String rootConfigClassName = System.getProperty(YajlCoreSingleton.class
-				.getSimpleName() + ".rootConfigClass");
-		if (rootConfigClassName != null) {
-			rootConfigClassName = rootConfigClassName.trim();
-			try {
-				Class rootConfigClass = Class.forName(rootConfigClassName);
-				rootConfig = (Configuration) rootConfigClass.newInstance();
-			} catch (ClassNotFoundException e) {
-				e.printStackTrace();
-			} catch (InstantiationException e) {
-				e.printStackTrace();
-			} catch (IllegalAccessException e) {
-				e.printStackTrace();
-			}
+		initRoot();
+
+	}
+
+	static void initRoot() {
+		rootConfig = null;
+
+		String rootConfigProperty = System.getProperty(YajlCoreSingleton.class
+				.getSimpleName() + ".rootConfig");
+
+		if (rootConfigProperty == null) {
+			return;
+		}
+
+		StringTokenizer tokenizer = new StringTokenizer(rootConfigProperty, ",");
+		String rootConfigClassName = tokenizer.nextToken().trim();
+		try {
+			Class rootConfigClass = Class.forName(rootConfigClassName);
+
+			Class[] paramTypes = new Class[tokenizer.countTokens() - 1];
+			Arrays.fill(paramTypes, String.class);
+
+			String[] params = new String[paramTypes.length];
+			rootConfig = (Configuration) rootConfigClass.getConstructor(
+					paramTypes).newInstance(params);
+
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+			e.printStackTrace();
+		} catch (NoSuchMethodException e) {
+			e.printStackTrace();
 		}
 
 	}
