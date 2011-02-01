@@ -2,7 +2,7 @@ package net.micwin.yajl.core.instances.impl;
 
 import java.util.ArrayList;
 
-import net.micwin.yajl.core.instances.Factory;
+import net.micwin.yajl.core.instances.IFactory;
 
 /**
  * A factory that creates ArrayLists.
@@ -11,7 +11,7 @@ import net.micwin.yajl.core.instances.Factory;
  * 
  * @param <E>
  */
-public class ArrayListFactory<E> implements Factory<java.util.ArrayList<E>> {
+public class ArrayListFactory<E> implements IFactory<java.util.ArrayList<E>> {
 
 	public ArrayList<E> create() {
 		return new ArrayList<E>();

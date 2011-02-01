@@ -1,5 +1,7 @@
 package net.micwin.yajl.core.instances;
 
+import net.micwin.tools4j.exceptions.TechException;
+
 /**
  * A factory is a structure that creates instances of type T. Name it a
  * outsourced constructor. Thats all.
@@ -8,12 +10,12 @@ package net.micwin.yajl.core.instances;
  * 
  * @param <T>
  */
-public interface Factory<T> {
+public interface IFactory<T> {
 
 	/**
 	 * Create a new instance.
 	 * 
 	 * @return
 	 */
-	public T create();
+	public T create() throws TechException;
 }

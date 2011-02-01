@@ -1,7 +1,7 @@
 package net.micwin.yajl.core.instances.impl;
 
 import java.util.Collection;
-import net.micwin.yajl.core.instances.Factory;
+import net.micwin.yajl.core.instances.IFactory;
 
 /**
  * provides a Pool that manages Collection instances. Gets its instances from a
@@ -14,7 +14,7 @@ import net.micwin.yajl.core.instances.Factory;
  */
 public class CollectionPool<T extends Collection> extends SimplePool<T> {
 
-	public CollectionPool(Factory<T> factory) {
+	public CollectionPool(IFactory<T> factory) {
 		super(factory);
 	}
 

@@ -1,11 +1,12 @@
-package net.micwin.tools4j.instances;
+package net.micwin.yajl.core.instances;
 
-import net.micwin.tools4j.instances.ReflectionFactory.InvocationStrategy;
 import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.instances.impl.ReflectionFactory;
+import net.micwin.yajl.core.instances.impl.ReflectionFactory.InvocationStrategy;
 
 public class DummyObject {
 
-    ReflectionFactory.InvocationStrategy strategy = null;
+    public ReflectionFactory.InvocationStrategy strategy = null;
 
     public static final DummyObject INSTANCE = new DummyObject(
 	    InvocationStrategy.STATIC_FIELD);

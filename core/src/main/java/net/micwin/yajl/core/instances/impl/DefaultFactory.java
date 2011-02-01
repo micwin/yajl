@@ -4,17 +4,17 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;
 
-import net.micwin.yajl.core.instances.Factory;
+import net.micwin.yajl.core.instances.IFactory;
 
 /**
- * A Factory that creates instances of class T by calling the default
+ * A IFactory that creates instances of class T by calling the default
  * constructor of T (which must be public and may not throw any exceptions).
  * 
  * @author MicWin
  * 
  * @param <T>
  */
-public class DefaultFactory<T> implements Factory<T> {
+public class DefaultFactory<T> implements IFactory<T> {
 
 	private Constructor<T> constructor;
 

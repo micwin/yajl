@@ -1,12 +1,14 @@
-package net.micwin.tools4j.instances;
+package net.micwin.yajl.core.instances.impl;
 
 import junit.framework.TestCase;
 
 import net.micwin.tools4j.exceptions.TechException;
-import net.micwin.tools4j.instances.ReflectionFactory.InvocationStrategy;
 import net.micwin.yajl.core.config.ConfigException;
 import net.micwin.yajl.core.config.IConfiguration;
 import net.micwin.yajl.core.config.impl.InMemoryConfiguration;
+import net.micwin.yajl.core.instances.DummyObject;
+import net.micwin.yajl.core.instances.impl.ReflectionFactory;
+import net.micwin.yajl.core.instances.impl.ReflectionFactory.InvocationStrategy;
 
 public class ReflectionFactoryTest extends TestCase {
 
@@ -41,7 +43,7 @@ public class ReflectionFactoryTest extends TestCase {
 
 	ReflectionFactory fac = composeFactory(DummyObject.class,
 		ReflectionFactory.InvocationStrategy.DEFAULT_CONSTRUCTOR);
-	DummyObject instance = (DummyObject) fac.newInstance();
+	DummyObject instance = (DummyObject) fac.create();
 	assertNotNull(instance);
 	assertEquals(ReflectionFactory.InvocationStrategy.DEFAULT_CONSTRUCTOR,
 		instance.strategy);
@@ -51,7 +53,7 @@ public class ReflectionFactoryTest extends TestCase {
 
 	ReflectionFactory fac = composeFactory(DummyObject.class,
 		ReflectionFactory.InvocationStrategy.CONFIG_CONSTRUCTOR);
-	DummyObject instance = (DummyObject) fac.newInstance();
+	DummyObject instance = (DummyObject) fac.create();
 	assertNotNull(instance);
 	assertEquals(ReflectionFactory.InvocationStrategy.CONFIG_CONSTRUCTOR,
 		instance.strategy);
@@ -61,7 +63,7 @@ public class ReflectionFactoryTest extends TestCase {
 
 	ReflectionFactory fac = composeFactory(DummyObject.class,
 		ReflectionFactory.InvocationStrategy.STATIC_FIELD);
-	DummyObject instance = (DummyObject) fac.newInstance();
+	DummyObject instance = (DummyObject) fac.create();
 	assertNotNull(instance);
 	assertEquals(ReflectionFactory.InvocationStrategy.STATIC_FIELD,
 		instance.strategy);

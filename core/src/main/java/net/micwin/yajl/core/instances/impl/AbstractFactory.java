@@ -1,4 +1,4 @@
-package net.micwin.tools4j.instances;
+package net.micwin.yajl.core.instances.impl;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,6 +6,7 @@ import java.util.Map;
 import net.micwin.yajl.core.config.ConfigException;
 import net.micwin.yajl.core.config.ConfigManager;
 import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.instances.IFactory;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

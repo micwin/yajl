@@ -1,10 +1,12 @@
-package net.micwin.tools4j.instances;
+package net.micwin.yajl.core.instances.impl;
 
 import java.util.LinkedList;
 import java.util.List;
 
 import net.micwin.yajl.core.config.ConfigException;
 import net.micwin.yajl.core.config.impl.InMemoryConfiguration;
+import net.micwin.yajl.core.instances.IFactory;
+import net.micwin.yajl.core.instances.impl.AbstractFactory;
 
 import junit.framework.TestCase;
 
@@ -32,7 +34,7 @@ public class AbstractFactoryTest extends TestCase {
     public void testGetFactory() throws ConfigException {
 	AbstractFactory.init(config);
 	IFactory<List> ff = AbstractFactory.getFactory(List.class);
-	List newInstance = ff.newInstance();
+	List newInstance = ff.create();
 	assertNotNull(newInstance);
 	assertEquals(LinkedList.class, newInstance.getClass());
 	newInstance.add("");

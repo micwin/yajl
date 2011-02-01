@@ -23,7 +23,7 @@
  * now path is of type HierarchyPath
  *
  * Revision 1.6.2.1  2006/12/29 12:06:35  recipient00
- * A new Factory for building streams and the like
+ * A new IFactory for building streams and the like
  *
  * Revision 1.6  2004/04/18 16:29:36  recipient00
  * Implemented FormatException and adjusted Interfaces and abstract

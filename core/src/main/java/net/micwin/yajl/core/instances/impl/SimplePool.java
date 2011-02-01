@@ -3,7 +3,7 @@ package net.micwin.yajl.core.instances.impl;
 import java.util.LinkedList;
 import java.util.List;
 
-import net.micwin.yajl.core.instances.Factory;
+import net.micwin.yajl.core.instances.IFactory;
 import net.micwin.yajl.core.instances.Pool;
 
 /**
@@ -17,11 +17,11 @@ import net.micwin.yajl.core.instances.Pool;
  */
 public class SimplePool<T> implements Pool<T> {
 
-	private final Factory<T> factory;
+	private final IFactory<T> factory;
 
 	List<T> free = new LinkedList<T>();
 
-	public SimplePool(Factory<T> factory) {
+	public SimplePool(IFactory<T> factory) {
 		this.factory = factory;
 	}
 
