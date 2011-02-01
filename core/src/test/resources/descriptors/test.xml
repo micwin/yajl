@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+	This is a sample entity descriptor for use with tdf, the trivial data framework.
+-->
+<tdf targetPackage="de.micwin.tdf.samples" daoType="connection">
+	<entity name="ChildEntity" description="Some test child entity"	dbTable="TCHILD_ENTITIES" idField="id">
+		<field	name="name"	type="String"	dbColumn="NAME"	description="A dummy field to demonstrate String fields" />
+		<field 	name="id" 	type="int" 		dbColumn="ID"	description="A dummy field to demonstrate int fields"/>
+	</entity>
+	<entity name="ParentEntity" description="Some test parent entity" dbTable="TPARENT_ENTITIES" idField="id">
+		<field	name="name" 	type="String"		dbColumn="NAME"		description="A dummy field to demonstrate String fields"/>
+		<field 	name="id"		type="int"			dbColumn="ID"		description="A dummy field to demonstrate int fields"/>
+		<field 	name="child"	type="ChildEntity"	dbColumn="CHILD_ID"	description="to demonstrate automatic reference reolution"/>
+	</entity>
+</tdf>

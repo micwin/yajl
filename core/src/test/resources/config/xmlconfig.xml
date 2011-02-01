@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<sub name="root">
+
+	<!-- ================================================================================== -->
+	<!-- === These are some straightforward config keys                                 === -->	 
+	<!-- ================================================================================== -->
+	<intKey>4</intKey>
+	<booleanKey>true</booleanKey>
+	<multiLineKey>Line0
+	This is a multi line entry
+	Line2</multiLineKey>
+	<cdataKey><![CDATA[<<Some>>]]></cdataKey>
+
+	<!-- ================================================================================== -->
+	<!-- === These are some complex typed config keys, ie an array typed config key     === -->
+	<!-- === and a sub configuration													=== -->	 
+	<!-- ================================================================================== -->
+	
+	<!-- an array is an ordered list of elements. 
+		the name of the element tags can be chosen at free will -->
+	<array name="arrayKey">
+		<!-- Some comment to check wether XmlConfiguration correctly deals with comment nodes -->
+		<element>elem1</element>
+		<element>elem2</element>
+		<element>elem3</element>
+	</array>
+	
+	<!-- a sub configuration is a nested configuration that can hold a full set of keys. -->
+    <sub name="sub1">
+    	<subKey>hello</subKey>
+    </sub>
+    
+</sub>
