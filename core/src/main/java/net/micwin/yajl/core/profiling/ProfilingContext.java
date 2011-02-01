@@ -27,7 +27,7 @@
  *
  *  
  */
-package net.micwin.tools4j.profiling;
+package net.micwin.yajl.core.profiling;
 
 import java.util.Collection;
 import java.util.HashMap;

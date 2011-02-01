@@ -1,10 +1,10 @@
-package net.micwin.tools4j.instances.impl;
+package net.micwin.yajl.core.instances.impl;
 
 import java.lang.reflect.Field;
 
-import net.micwin.tools4j.instances.IInvoker;
 import net.micwin.yajl.core.config.ConfigException;
 import net.micwin.yajl.core.exceptions.TechException;
+import net.micwin.yajl.core.instances.IInvoker;
 
 /**
  * An invoker accessing a static field instead of creating an instance. This

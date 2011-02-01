@@ -1,7 +1,7 @@
-package net.micwin.tools4j.instances.impl;
+package net.micwin.yajl.core.instances.impl;
 
-import net.micwin.tools4j.instances.IInvoker;
 import net.micwin.yajl.core.exceptions.TechException;
+import net.micwin.yajl.core.instances.IInvoker;
 
 /**
  * An invoker instantiating by calling the default constructor.

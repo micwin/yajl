@@ -30,7 +30,7 @@
  *  
  */
 
-package net.micwin.tools4j.threads;
+package net.micwin.yajl.core.threads;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

@@ -1,4 +1,4 @@
-package net.micwin.tools4j.instances;
+package net.micwin.yajl.core.instances;
 
 /**
  * Manages persistence of instances.

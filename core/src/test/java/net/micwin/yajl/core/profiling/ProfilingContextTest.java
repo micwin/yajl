@@ -24,7 +24,7 @@
  *
  *  
  */
-package net.micwin.tools4j.profiling;
+package net.micwin.yajl.core.profiling;
 
 import net.micwin.yajl.core.config.ConfigException;
 import net.micwin.yajl.core.config.impl.InMemoryConfiguration;
@@ -112,7 +112,7 @@ public class ProfilingContextTest extends TestCase {
          */
     public void testGetContextStringArray() {
 	ProfilingContext one = new ProfilingContext(true, true, "");
-	ProfilingContext._root._sub.put("one", one);
+	ProfilingContext._root._sub.put("one", one)  ; 
 	assertSame(one, ProfilingContext.getContext(new String[] { "one" }));
 	ProfilingContext two = one.getSub("two");
 	assertSame(two, ProfilingContext
@@ -130,7 +130,7 @@ public class ProfilingContextTest extends TestCase {
 	ProfilingContext ctxByClass = ProfilingContext
 		.getContext(ProfilingContextTest.class);
 	ProfilingContext ctxByPath = ProfilingContext
-		.getContext(new String[] { "net", "micwin", "tools4j",
+		.getContext(new String[] { "net", "micwin", "yajl", "core" ,
 			"profiling", "ProfilingContextTest" });
 	assertSame(ctxByClass, ctxByPath);
 
@@ -144,7 +144,7 @@ public class ProfilingContextTest extends TestCase {
 	ProfilingContext ctxByClass = ProfilingContext.getContext(
 		ProfilingContextTest.class, "someSub");
 	ProfilingContext ctxByPath = ProfilingContext.getContext(new String[] {
-		"net", "micwin", "tools4j", "profiling",
+		"net", "micwin", "yajl", "core" , "profiling",
 		"ProfilingContextTest", "someSub" });
 	assertSame(ctxByClass, ctxByPath);
 
@@ -157,7 +157,7 @@ public class ProfilingContextTest extends TestCase {
 	ProfilingContext ctxByPackage = ProfilingContext
 		.getContext(ProfilingContextTest.class.getPackage());
 	ProfilingContext ctxByPath = ProfilingContext.getContext(new String[] {
-		"net", "micwin", "tools4j", "profiling" });
+		"net", "micwin", "yajl", "core" , "profiling" });
 	assertSame(ctxByPackage, ctxByPath);
     }
 

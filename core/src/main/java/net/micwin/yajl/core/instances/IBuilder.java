@@ -1,4 +1,4 @@
-package net.micwin.tools4j.instances;
+package net.micwin.yajl.core.instances;
 
 /**
  * A builder is a sort of factory, but with the specific speciality that it is

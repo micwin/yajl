@@ -24,7 +24,7 @@
  *  
  */
 
-package net.micwin.tools4j.threads;
+package net.micwin.yajl.core.threads;
 
 /**
  * A Class that provides sort ot a tester runnable. You can specify a sleep

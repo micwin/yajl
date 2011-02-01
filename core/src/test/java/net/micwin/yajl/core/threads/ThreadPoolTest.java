@@ -24,11 +24,14 @@
  *  
  */
 
-package net.micwin.tools4j.threads;
+package net.micwin.yajl.core.threads;
 
 import junit.framework.TestCase;
 import net.micwin.yajl.core.config.ConfigException;
 import net.micwin.yajl.core.config.impl.InMemoryConfiguration;
+import net.micwin.yajl.core.threads.CounterRunnable;
+import net.micwin.yajl.core.threads.PooledThread;
+import net.micwin.yajl.core.threads.ThreadPool;
 
 /**
  * TODO Add some useful comment here

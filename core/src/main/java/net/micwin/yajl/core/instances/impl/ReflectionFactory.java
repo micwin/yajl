@@ -1,13 +1,10 @@
 package net.micwin.yajl.core.instances.impl;
 
-import net.micwin.tools4j.instances.IInvoker;
-import net.micwin.tools4j.instances.impl.ConfigurationInvoker;
-import net.micwin.tools4j.instances.impl.DefaultInvoker;
-import net.micwin.tools4j.instances.impl.StaticFieldInvoker;
 import net.micwin.yajl.core.config.ConfigException;
 import net.micwin.yajl.core.config.IConfiguration;
 import net.micwin.yajl.core.exceptions.TechException;
 import net.micwin.yajl.core.instances.IFactory;
+import net.micwin.yajl.core.instances.IInvoker;
 
 /**
  * Instantiates classes by using reflection. The strategy on how to create /
