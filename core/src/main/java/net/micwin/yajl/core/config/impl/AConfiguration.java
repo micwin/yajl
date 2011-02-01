@@ -58,10 +58,10 @@ import java.util.Properties;
 import net.micwin.tools4j.StringFactory;
 import net.micwin.tools4j.data.StreamFactory;
 import net.micwin.tools4j.data.structures.HierarchyPath;
-import net.micwin.tools4j.exceptions.TechException;
 import net.micwin.yajl.core.config.FormatException;
 import net.micwin.yajl.core.config.IConfiguration;
 import net.micwin.yajl.core.config.MissingConfigKeyException;
+import net.micwin.yajl.core.exceptions.TechException;
 
 /**
  * An abstract implementation of most of the methods of

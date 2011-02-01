@@ -1,7 +1,7 @@
 /**
  * 
  */
-package net.micwin.tools4j.exceptions;
+package net.micwin.yajl.core.exceptions;
 
 /**
  * A technical exception. Since technical problems most the time result in fatal

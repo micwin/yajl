@@ -2,10 +2,10 @@ package net.micwin.yajl.core.instances.impl;
 
 import junit.framework.TestCase;
 
-import net.micwin.tools4j.exceptions.TechException;
 import net.micwin.yajl.core.config.ConfigException;
 import net.micwin.yajl.core.config.IConfiguration;
 import net.micwin.yajl.core.config.impl.InMemoryConfiguration;
+import net.micwin.yajl.core.exceptions.TechException;
 import net.micwin.yajl.core.instances.DummyObject;
 import net.micwin.yajl.core.instances.impl.ReflectionFactory;
 import net.micwin.yajl.core.instances.impl.ReflectionFactory.InvocationStrategy;

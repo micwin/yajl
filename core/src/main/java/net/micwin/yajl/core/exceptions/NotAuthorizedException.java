@@ -1,7 +1,7 @@
 /**
  * 
  */
-package net.micwin.tools4j.exceptions;
+package net.micwin.yajl.core.exceptions;
 
 /**
  * An exception that is thrown in situations where a login fails, a session has

@@ -1,6 +1,6 @@
 package net.micwin.yajl.core.instances;
 
-import net.micwin.tools4j.exceptions.TechException;
+import net.micwin.yajl.core.exceptions.TechException;
 
 /**
  * A factory is a structure that creates instances of type T. Name it a

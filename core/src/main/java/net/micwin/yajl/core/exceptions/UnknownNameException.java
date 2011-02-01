@@ -1,4 +1,4 @@
-package net.micwin.tools4j.exceptions;
+package net.micwin.yajl.core.exceptions;
 
 /**
  * This exception is thrown when a named element is required and a used name or

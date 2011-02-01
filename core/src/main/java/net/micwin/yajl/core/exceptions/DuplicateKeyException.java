@@ -1,4 +1,4 @@
-package net.micwin.tools4j.exceptions;
+package net.micwin.yajl.core.exceptions;
 
 /**
  * This exception is a specialization of a DuplicateNameException saying that

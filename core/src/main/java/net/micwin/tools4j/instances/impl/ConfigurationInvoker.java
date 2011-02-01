@@ -3,9 +3,9 @@ package net.micwin.tools4j.instances.impl;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
-import net.micwin.tools4j.exceptions.TechException;
 import net.micwin.tools4j.instances.IInvoker;
 import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.exceptions.TechException;
 
 /**
  * An invoker invoking by using an Iconfiguration instance.
