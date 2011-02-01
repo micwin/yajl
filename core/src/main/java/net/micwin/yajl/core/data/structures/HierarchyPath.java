@@ -3,10 +3,10 @@
  * All rights reserved
  */
 
-package net.micwin.tools4j.data.structures;
+package net.micwin.yajl.core.data.structures;
 
-import net.micwin.tools4j.ArrayFactory;
-import net.micwin.tools4j.StringFactory;
+import net.micwin.yajl.core.instances.impl.ArrayFactory;
+import net.micwin.yajl.core.instances.impl.StringFactory;
 
 /**
  * This class encapsulates the logic of parsing, generating and handling all

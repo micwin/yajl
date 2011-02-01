@@ -55,13 +55,13 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
 
-import net.micwin.tools4j.StringFactory;
-import net.micwin.tools4j.data.StreamFactory;
-import net.micwin.tools4j.data.structures.HierarchyPath;
 import net.micwin.yajl.core.config.FormatException;
 import net.micwin.yajl.core.config.IConfiguration;
 import net.micwin.yajl.core.config.MissingConfigKeyException;
+import net.micwin.yajl.core.data.StreamFactory;
+import net.micwin.yajl.core.data.structures.HierarchyPath;
 import net.micwin.yajl.core.exceptions.TechException;
+import net.micwin.yajl.core.instances.impl.StringFactory;
 
 /**
  * An abstract implementation of most of the methods of

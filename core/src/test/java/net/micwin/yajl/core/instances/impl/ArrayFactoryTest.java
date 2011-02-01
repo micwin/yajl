@@ -1,5 +1,6 @@
-package net.micwin.tools4j;
+package net.micwin.yajl.core.instances.impl;
 
+import net.micwin.yajl.core.instances.impl.ArrayFactory;
 import junit.framework.TestCase;
 
 public class ArrayFactoryTest extends TestCase {

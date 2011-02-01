@@ -62,10 +62,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-import net.micwin.tools4j.StringFactory;
-import net.micwin.tools4j.data.structures.HierarchyPath;
 import net.micwin.yajl.core.config.IConfiguration;
 import net.micwin.yajl.core.config.MissingConfigKeyException;
+import net.micwin.yajl.core.data.structures.HierarchyPath;
+import net.micwin.yajl.core.instances.impl.StringFactory;
 
 /**
  * Provides an implementation of IConfiguration that gets its values from a

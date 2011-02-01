@@ -1,4 +1,4 @@
-package net.micwin.tools4j;
+package net.micwin.yajl.core.instances;
 
 /**
  * A Permutator has the ability of permutating through a set of terminals for a

@@ -7,10 +7,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
-import net.micwin.tools4j.StringFactory;
-import net.micwin.tools4j.data.StreamFactory;
 import net.micwin.yajl.core.config.IConfiguration;
 import net.micwin.yajl.core.config.IConfigurationBuilder;
+import net.micwin.yajl.core.data.StreamFactory;
+import net.micwin.yajl.core.instances.impl.StringFactory;
 
 /**
  * This XmlConfigurationBuilder klnows how to builds XmlConfiguration instances

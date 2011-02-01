@@ -1,9 +1,11 @@
-package net.micwin.tools4j;
+package net.micwin.yajl.core.instances.impl;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.Properties;
+
+import net.micwin.yajl.core.instances.impl.StringFactory;
 
 import junit.framework.TestCase;
 
@@ -12,7 +14,7 @@ import junit.framework.TestCase;
  * 
  * TODO translate javadocs into english, add legal notes
  * 
- * @see net.micwin.tools4j.StringFactory
+ * @see net.micwin.yajl.core.instances.impl.StringFactory
  * @author micwin@gmx.org
  * @since 09.04.2003
  */

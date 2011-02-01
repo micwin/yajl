@@ -1,6 +1,8 @@
-package net.micwin.tools4j;
+package net.micwin.yajl.core.instances.impl;
 
 import java.util.Date;
+
+import net.micwin.yajl.core.instances.impl.DateFactory;
 
 import junit.framework.TestCase;
 

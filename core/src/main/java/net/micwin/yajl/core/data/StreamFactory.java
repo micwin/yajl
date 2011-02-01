@@ -1,7 +1,7 @@
 /**
  * 
  */
-package net.micwin.tools4j.data;
+package net.micwin.yajl.core.data;
 
 import java.io.File;
 import java.io.FileInputStream;

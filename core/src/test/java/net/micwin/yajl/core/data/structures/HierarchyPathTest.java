@@ -1,5 +1,6 @@
-package net.micwin.tools4j.data.structures;
+package net.micwin.yajl.core.data.structures;
 
+import net.micwin.yajl.core.data.structures.HierarchyPath;
 import junit.framework.TestCase;
 
 public class HierarchyPathTest extends TestCase {

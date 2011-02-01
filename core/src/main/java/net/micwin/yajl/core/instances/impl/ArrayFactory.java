@@ -1,4 +1,4 @@
-package net.micwin.tools4j;
+package net.micwin.yajl.core.instances.impl;
 
 import java.lang.reflect.Array;
 

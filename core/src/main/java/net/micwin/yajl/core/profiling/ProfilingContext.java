@@ -36,9 +36,9 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import net.micwin.tools4j.StringFactory;
 import net.micwin.yajl.core.config.ConfigException;
 import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.instances.impl.StringFactory;
 
 /**
  * This class covers a single profiling context from which runtime statistics

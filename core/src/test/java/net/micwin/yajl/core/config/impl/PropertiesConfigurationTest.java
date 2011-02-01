@@ -3,9 +3,9 @@ package net.micwin.yajl.core.config.impl;
 import java.io.IOException;
 import java.util.Properties;
 
-import net.micwin.tools4j.data.structures.HierarchyPath;
 import net.micwin.yajl.core.config.MissingConfigKeyException;
 import net.micwin.yajl.core.config.impl.PropertiesConfiguration;
+import net.micwin.yajl.core.data.structures.HierarchyPath;
 import junit.framework.TestCase;
 
 /**

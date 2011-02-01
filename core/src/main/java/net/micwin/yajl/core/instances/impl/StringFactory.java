@@ -1,4 +1,4 @@
-package net.micwin.tools4j;
+package net.micwin.yajl.core.instances.impl;
 
 /*
  * (C) 2004 M.Winkler All Rights reserved
@@ -80,6 +80,8 @@ import java.text.ParseException;
 import java.util.Map;
 import java.util.Properties;
 import java.util.StringTokenizer;
+
+import net.micwin.yajl.core.instances.Permutator;
 
 /**
  * Provides a much more powerful replacement for StringBuffer. The declared aim

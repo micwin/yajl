@@ -1,8 +1,9 @@
 /**
  * 
  */
-package net.micwin.tools4j;
+package net.micwin.yajl.core.instances;
 
+import net.micwin.yajl.core.instances.Permutator;
 import junit.framework.TestCase;
 
 /**
@@ -20,7 +21,7 @@ public class PermutatorTest extends TestCase {
 
     /**
          * Test method for
-         * {@link net.micwin.tools4j.Permutator#Permutator(java.lang.Object[], int)}.
+         * {@link net.micwin.yajl.core.instances.Permutator#Permutator(java.lang.Object[], int)}.
          */
     public final void testPermutator() {
 
@@ -72,7 +73,7 @@ public class PermutatorTest extends TestCase {
     }
 
     /**
-         * Test method for {@link net.micwin.tools4j.Permutator#hasNext()}.
+         * Test method for {@link net.micwin.yajl.core.instances.Permutator#hasNext()}.
          */
     public final void testRaise() {
 	Permutator p = new Permutator(new String[] { "0", "1" }, 1);
@@ -82,7 +83,7 @@ public class PermutatorTest extends TestCase {
 
     /**
          * Test method for
-         * {@link net.micwin.tools4j.Permutator#next(java.lang.Object[])}.
+         * {@link net.micwin.yajl.core.instances.Permutator#next(java.lang.Object[])}.
          */
     public final void testRaise_Easy() {
 	Permutator p = new Permutator(new String[] { "0", "1" }, 1);
@@ -97,7 +98,7 @@ public class PermutatorTest extends TestCase {
 
     /**
          * Test method for
-         * {@link net.micwin.tools4j.Permutator#next(java.lang.Object[])}.
+         * {@link net.micwin.yajl.core.instances.Permutator#next(java.lang.Object[])}.
          */
     public final void testRaise_Complex() {
 	Permutator p = new Permutator(new String[] { "0", "1", "2" }, 2);
@@ -144,7 +145,7 @@ public class PermutatorTest extends TestCase {
     }
 
     /**
-         * Test method for {@link net.micwin.tools4j.Permutator#restart()}.
+         * Test method for {@link net.micwin.yajl.core.instances.Permutator#restart()}.
          */
     public final void testRestart() {
 

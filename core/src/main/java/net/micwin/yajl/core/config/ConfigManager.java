@@ -6,11 +6,11 @@ package net.micwin.yajl.core.config;
 import java.io.IOException;
 import java.text.ParseException;
 
-import net.micwin.tools4j.StringFactory;
 import net.micwin.yajl.core.config.impl.PropertiesConfiguration;
 import net.micwin.yajl.core.config.impl.PropertiesConfigurationBuilder;
 import net.micwin.yajl.core.config.impl.XmlConfiguration;
 import net.micwin.yajl.core.config.impl.XmlConfigurationBuilder;
+import net.micwin.yajl.core.instances.impl.StringFactory;
 
 /**
  * The config manager is a seemless factory for IConfiguration, and manages a

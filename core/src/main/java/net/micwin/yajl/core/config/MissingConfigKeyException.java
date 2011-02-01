@@ -41,7 +41,7 @@
 
 package net.micwin.yajl.core.config;
 
-import net.micwin.tools4j.StringFactory;
+import net.micwin.yajl.core.instances.impl.StringFactory;
 
 /**
  * Signals that at least one configuration key is missing. You can get the list
