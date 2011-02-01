@@ -26,8 +26,8 @@
  */
 package net.micwin.tools4j.profiling;
 
-import net.micwin.tools4j.config.ConfigException;
-import net.micwin.tools4j.config.impl.InMemoryConfiguration;
+import net.micwin.yajl.core.config.ConfigException;
+import net.micwin.yajl.core.config.impl.InMemoryConfiguration;
 import junit.framework.TestCase;
 
 /**

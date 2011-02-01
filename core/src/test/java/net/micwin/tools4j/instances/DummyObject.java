@@ -1,7 +1,7 @@
 package net.micwin.tools4j.instances;
 
-import net.micwin.tools4j.config.IConfiguration;
 import net.micwin.tools4j.instances.ReflectionFactory.InvocationStrategy;
+import net.micwin.yajl.core.config.IConfiguration;
 
 public class DummyObject {
 

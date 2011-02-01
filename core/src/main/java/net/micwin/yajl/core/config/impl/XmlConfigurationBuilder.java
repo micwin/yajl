@@ -1,16 +1,16 @@
 /**
  * 
  */
-package net.micwin.tools4j.config.impl;
+package net.micwin.yajl.core.config.impl;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
 import net.micwin.tools4j.StringFactory;
-import net.micwin.tools4j.config.IConfiguration;
-import net.micwin.tools4j.config.IConfigurationBuilder;
 import net.micwin.tools4j.data.StreamFactory;
+import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.config.IConfigurationBuilder;
 
 /**
  * This XmlConfigurationBuilder klnows how to builds XmlConfiguration instances
@@ -24,7 +24,7 @@ public class XmlConfigurationBuilder implements IConfigurationBuilder {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfigurationBuilder#accepts(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfigurationBuilder#accepts(java.lang.String)
          */
     public boolean accepts(String configUrl) {
 	return configUrl.toUpperCase().endsWith(".XML");
@@ -33,7 +33,7 @@ public class XmlConfigurationBuilder implements IConfigurationBuilder {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfigurationBuilder#read(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfigurationBuilder#read(java.lang.String)
          */
     public IConfiguration read(String eUrl) throws IOException,
 	    IllegalStateException {

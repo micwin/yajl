@@ -9,9 +9,9 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import net.micwin.tools4j.config.IConfiguration;
-import net.micwin.tools4j.config.MissingConfigKeyException;
 import net.micwin.tools4j.data.StreamFactory;
+import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.config.MissingConfigKeyException;
 
 /**
  * A container for specific locale data.

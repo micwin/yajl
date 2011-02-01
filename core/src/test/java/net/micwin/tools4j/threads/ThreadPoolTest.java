@@ -27,8 +27,8 @@
 package net.micwin.tools4j.threads;
 
 import junit.framework.TestCase;
-import net.micwin.tools4j.config.ConfigException;
-import net.micwin.tools4j.config.impl.InMemoryConfiguration;
+import net.micwin.yajl.core.config.ConfigException;
+import net.micwin.yajl.core.config.impl.InMemoryConfiguration;
 
 /**
  * TODO Add some useful comment here

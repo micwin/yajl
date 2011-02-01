@@ -52,7 +52,7 @@
  * Revision 1.1 2003/12/09 20:16:57 micwin initial check in
  */
 
-package net.micwin.tools4j.config.impl;
+package net.micwin.yajl.core.config.impl;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -63,9 +63,9 @@ import java.util.Map;
 import java.util.Properties;
 
 import net.micwin.tools4j.StringFactory;
-import net.micwin.tools4j.config.IConfiguration;
-import net.micwin.tools4j.config.MissingConfigKeyException;
 import net.micwin.tools4j.data.structures.HierarchyPath;
+import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.config.MissingConfigKeyException;
 
 /**
  * Provides an implementation of IConfiguration that gets its values from a
@@ -321,7 +321,7 @@ public final class PropertiesConfiguration extends AConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#getString(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfiguration#getString(java.lang.String)
          */
     public String getString(String key) throws MissingConfigKeyException {
 	String value = (String) _keys.get(key);
@@ -339,7 +339,7 @@ public final class PropertiesConfiguration extends AConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#sub(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfiguration#sub(java.lang.String)
          */
     public IConfiguration sub(String key) throws MissingConfigKeyException {
 	IConfiguration sub = (IConfiguration) _keys.get(key);
@@ -357,14 +357,14 @@ public final class PropertiesConfiguration extends AConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#keys()
+         * @see net.micwin.yajl.core.config.IConfiguration#keys()
          */
     public String[] keys() {
 	return (String[]) _keys.keySet().toArray(new String[0]);
     }
 
     /**
-         * @see net.micwin.tools4j.config.impl.AConfiguration#getBaseUrl()
+         * @see net.micwin.yajl.core.config.impl.AConfiguration#getBaseUrl()
          */
     public String getBaseUrl() {
 	return _baseUrl;

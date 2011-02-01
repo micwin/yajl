@@ -27,11 +27,12 @@
  *  
  */
 
-package net.micwin.tools4j.config.impl;
+package net.micwin.yajl.core.config.impl;
 
 import java.net.URL;
 
-import net.micwin.tools4j.config.IConfiguration;
+import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.config.impl.XmlConfiguration;
 import junit.framework.TestCase;
 
 /**

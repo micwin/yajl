@@ -1,16 +1,17 @@
-package net.micwin.tools4j.config.impl;
+package net.micwin.yajl.core.config.impl;
 
 import java.io.IOException;
 import java.util.Properties;
 
-import net.micwin.tools4j.config.MissingConfigKeyException;
 import net.micwin.tools4j.data.structures.HierarchyPath;
+import net.micwin.yajl.core.config.MissingConfigKeyException;
+import net.micwin.yajl.core.config.impl.PropertiesConfiguration;
 import junit.framework.TestCase;
 
 /**
- * Unit Tests for Class net.micwin.tools4j.config.impl.PropertiesConfiguration
+ * Unit Tests for Class net.micwin.yajl.core.config.impl.PropertiesConfiguration
  * 
- * @see net.micwin.tools4j.config.impl.PropertiesConfiguration
+ * @see net.micwin.yajl.core.config.impl.PropertiesConfiguration
  * @author micwin@gmx.org
  * @since 09.12.2003 17:40:36
  */

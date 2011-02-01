@@ -39,7 +39,7 @@
  *  
  */
 
-package net.micwin.tools4j.config;
+package net.micwin.yajl.core.config;
 
 import net.micwin.tools4j.StringFactory;
 

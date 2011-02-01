@@ -39,8 +39,8 @@
 
 package net.micwin.tools4j.frameworks;
 
-import net.micwin.tools4j.config.ConfigException;
-import net.micwin.tools4j.config.IConfiguration;
+import net.micwin.yajl.core.config.ConfigException;
+import net.micwin.yajl.core.config.IConfiguration;
 
 /**
  * Test class for unit testing the FrameworkManager TODO add legal notes
@@ -66,7 +66,7 @@ public class DummyFramework implements IFramework {
     ConfigException initException = null;
 
     /**
-         * @see net.micwin.tools4j.frameworks.IFramework#init(net.micwin.tools4j.config.IConfiguration)
+         * @see net.micwin.tools4j.frameworks.IFramework#init(net.micwin.yajl.core.config.IConfiguration)
          */
     public void init(IConfiguration configuration) throws ConfigException {
 	if (initConfig != null)

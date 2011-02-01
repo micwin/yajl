@@ -6,9 +6,9 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import net.micwin.tools4j.config.ConfigManager;
-import net.micwin.tools4j.config.IConfiguration;
-import net.micwin.tools4j.config.MissingConfigKeyException;
+import net.micwin.yajl.core.config.ConfigManager;
+import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.config.MissingConfigKeyException;
 
 /**
  * This class manages multi language packs in a more flexible way than the java

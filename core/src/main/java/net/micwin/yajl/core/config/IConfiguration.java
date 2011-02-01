@@ -42,7 +42,7 @@
  *  
  */
 
-package net.micwin.tools4j.config;
+package net.micwin.yajl.core.config;
 
 /**
  * Abstracts the function of a key-value based configurative group. This

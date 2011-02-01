@@ -38,7 +38,7 @@
  * eine Basis-Exception f�r die Package
  */
 
-package net.micwin.tools4j.config;
+package net.micwin.yajl.core.config;
 
 import java.io.PrintStream;
 import java.io.PrintWriter;

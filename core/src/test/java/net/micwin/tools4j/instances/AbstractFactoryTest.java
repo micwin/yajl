@@ -3,8 +3,8 @@ package net.micwin.tools4j.instances;
 import java.util.LinkedList;
 import java.util.List;
 
-import net.micwin.tools4j.config.ConfigException;
-import net.micwin.tools4j.config.impl.InMemoryConfiguration;
+import net.micwin.yajl.core.config.ConfigException;
+import net.micwin.yajl.core.config.impl.InMemoryConfiguration;
 
 import junit.framework.TestCase;
 

@@ -2,11 +2,11 @@ package net.micwin.tools4j.instances;
 
 import junit.framework.TestCase;
 
-import net.micwin.tools4j.config.ConfigException;
-import net.micwin.tools4j.config.IConfiguration;
-import net.micwin.tools4j.config.impl.InMemoryConfiguration;
 import net.micwin.tools4j.exceptions.TechException;
 import net.micwin.tools4j.instances.ReflectionFactory.InvocationStrategy;
+import net.micwin.yajl.core.config.ConfigException;
+import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.config.impl.InMemoryConfiguration;
 
 public class ReflectionFactoryTest extends TestCase {
 

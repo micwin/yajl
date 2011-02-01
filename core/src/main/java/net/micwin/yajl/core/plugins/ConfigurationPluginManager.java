@@ -3,7 +3,8 @@ package net.micwin.yajl.core.plugins;
 import java.util.HashMap;
 import java.util.Map;
 
-import net.micwin.yajl.core.config.Configuration;
+import net.micwin.yajl.core.config.ConfigException;
+import net.micwin.yajl.core.config.IConfiguration;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -18,11 +19,11 @@ public class ConfigurationPluginManager implements IPluginManager {
 
 	private final Log L = LogFactory.getLog(ConfigurationPluginManager.class);
 
-	Configuration config;
+	IConfiguration config;
 
 	Map<String, IPlugin> pluginsById = new HashMap<String, IPlugin>();
 
-	public ConfigurationPluginManager(Configuration config) {
+	public ConfigurationPluginManager(IConfiguration config) {
 		this.config = config;
 	}
 
@@ -30,8 +31,8 @@ public class ConfigurationPluginManager implements IPluginManager {
 		return pluginsById.get(pluginId);
 	}
 
-	public void init() {
-		String[] pluginClasses = config.getStringArray("plugins");
+	public void init() throws ConfigException{
+		String[] pluginClasses = config.getArray("plugins");
 		for (int i = 0; i < pluginClasses.length; i++) {
 			String className = pluginClasses[i];
 			try {

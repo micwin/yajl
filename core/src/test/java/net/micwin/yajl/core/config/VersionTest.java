@@ -1,8 +1,9 @@
 /**
  * 
  */
-package net.micwin.tools4j.config;
+package net.micwin.yajl.core.config;
 
+import net.micwin.yajl.core.config.Version;
 import junit.framework.TestCase;
 
 /**
@@ -20,7 +21,7 @@ public class VersionTest extends TestCase {
 
     /**
          * Test method for
-         * {@link net.micwin.tools4j.config.Version#Version(int, int, int)}.
+         * {@link net.micwin.yajl.core.config.Version#Version(int, int, int)}.
          */
     public final void testVersion() {
 	Version v = new Version(1, 2, 3);
@@ -32,7 +33,7 @@ public class VersionTest extends TestCase {
 
     /**
          * Test method for
-         * {@link net.micwin.tools4j.config.Version#compareTo(java.lang.Object)} -
+         * {@link net.micwin.yajl.core.config.Version#compareTo(java.lang.Object)} -
          * equal instances.
          */
     public final void testCompareTo_equal() {
@@ -41,7 +42,7 @@ public class VersionTest extends TestCase {
 
     /**
          * Test method for
-         * {@link net.micwin.tools4j.config.Version#compareTo(java.lang.Object)} -
+         * {@link net.micwin.yajl.core.config.Version#compareTo(java.lang.Object)} -
          * first is smaller.
          */
     public final void testComparefirstIsSmaller() {
@@ -55,7 +56,7 @@ public class VersionTest extends TestCase {
 
     /**
          * Test method for
-         * {@link net.micwin.tools4j.config.Version#compareTo(java.lang.Object)} -
+         * {@link net.micwin.yajl.core.config.Version#compareTo(java.lang.Object)} -
          * first is smaller.
          */
     public final void testCompare_SecondIsSmaller() {
@@ -68,7 +69,7 @@ public class VersionTest extends TestCase {
     }
 
     /**
-         * Test method for {@link net.micwin.tools4j.config.Version#toString()}.
+         * Test method for {@link net.micwin.yajl.core.config.Version#toString()}.
          */
     public final void testToString() {
 	assertEquals("1.4.3", new Version(1, 4, 3).toString());
@@ -76,7 +77,7 @@ public class VersionTest extends TestCase {
 
     /**
          * Test method for
-         * {@link net.micwin.tools4j.config.Version#toArray(int[])} witn null as
+         * {@link net.micwin.yajl.core.config.Version#toArray(int[])} witn null as
          * argument.
          */
     public final void testToArray_null() {
@@ -90,7 +91,7 @@ public class VersionTest extends TestCase {
 
     /**
          * Test method for
-         * {@link net.micwin.tools4j.config.Version#toArray(int[])} with too
+         * {@link net.micwin.yajl.core.config.Version#toArray(int[])} with too
          * short argument.
          */
     public final void testToArray_tooShort() {
@@ -104,7 +105,7 @@ public class VersionTest extends TestCase {
 
     /**
          * Test method for
-         * {@link net.micwin.tools4j.config.Version#toArray(int[])} with too
+         * {@link net.micwin.yajl.core.config.Version#toArray(int[])} with too
          * long argument.
          */
     public final void testToArray_tooLong() {
@@ -131,7 +132,7 @@ public class VersionTest extends TestCase {
 
     /**
          * Test method for
-         * {@link net.micwin.tools4j.config.Version#isBelow(net.micwin.tools4j.config.Version)}.
+         * {@link net.micwin.yajl.core.config.Version#isBelow(net.micwin.yajl.core.config.Version)}.
          */
     public final void testIsBelow() {
 	assertTrue(new Version(4, 4, 4).isBelow(new Version(5, 4, 4)));
@@ -151,7 +152,7 @@ public class VersionTest extends TestCase {
 
     /**
          * Test method for
-         * {@link net.micwin.tools4j.config.Version#isAbove(net.micwin.tools4j.config.Version)}.
+         * {@link net.micwin.yajl.core.config.Version#isAbove(net.micwin.yajl.core.config.Version)}.
          */
     public final void testIsAbove() {
 	assertTrue(new Version(6, 6, 6).isAbove(new Version(5, 6, 6)));

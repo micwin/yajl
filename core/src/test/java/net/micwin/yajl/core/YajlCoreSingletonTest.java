@@ -1,15 +1,12 @@
 package net.micwin.yajl.core;
 
-import net.micwin.yajl.core.config.impl.PropertiesConfigImpl;
+import net.micwin.yajl.core.config.impl.InMemoryConfiguration;
 import junit.framework.TestCase;
 
 public class YajlCoreSingletonTest extends TestCase {
 
 	public void testGetRootConfig() {
-		PropertiesConfigImpl propsConfig = new PropertiesConfigImpl();
-		YajlCoreSingleton.rootConfig = propsConfig;
-		assertNotNull(YajlCoreSingleton.getRootConfig());
-		assertEquals(propsConfig, YajlCoreSingleton.getRootConfig());
+		YajlCoreSingleton.rootConfig = new InMemoryConfiguration();
 	}
 
 	public void testGetRootConfig_Fail() {

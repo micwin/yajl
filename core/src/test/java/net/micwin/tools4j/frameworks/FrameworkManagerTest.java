@@ -41,10 +41,10 @@ package net.micwin.tools4j.frameworks;
 
 import java.io.IOException;
 
-import net.micwin.tools4j.config.ConfigException;
-import net.micwin.tools4j.config.IConfiguration;
-import net.micwin.tools4j.config.impl.InMemoryConfiguration;
-import net.micwin.tools4j.config.impl.PropertiesConfiguration;
+import net.micwin.yajl.core.config.ConfigException;
+import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.config.impl.InMemoryConfiguration;
+import net.micwin.yajl.core.config.impl.PropertiesConfiguration;
 import junit.framework.TestCase;
 
 /**

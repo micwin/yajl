@@ -34,7 +34,7 @@
  * Initial check in
  *  
  */
-package net.micwin.tools4j.config;
+package net.micwin.yajl.core.config;
 
 /**
  * This exception is thrown when a config key is present, but cannot meet a

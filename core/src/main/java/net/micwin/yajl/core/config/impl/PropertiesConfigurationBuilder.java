@@ -1,12 +1,12 @@
 /**
  * 
  */
-package net.micwin.tools4j.config.impl;
+package net.micwin.yajl.core.config.impl;
 
 import java.io.IOException;
 
-import net.micwin.tools4j.config.IConfiguration;
-import net.micwin.tools4j.config.IConfigurationBuilder;
+import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.config.IConfigurationBuilder;
 
 /**
  * A IConfigurationBuilder to handle configurations stored in properties files.
@@ -19,7 +19,7 @@ public class PropertiesConfigurationBuilder implements IConfigurationBuilder {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfigurationBuilder#accepts(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfigurationBuilder#accepts(java.lang.String)
          */
     public boolean accepts(String eUrl) {
 	eUrl = eUrl.toUpperCase();
@@ -29,7 +29,7 @@ public class PropertiesConfigurationBuilder implements IConfigurationBuilder {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfigurationBuilder#read(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfigurationBuilder#read(java.lang.String)
          */
     public IConfiguration read(String eUrl) throws IOException,
 	    IllegalStateException {

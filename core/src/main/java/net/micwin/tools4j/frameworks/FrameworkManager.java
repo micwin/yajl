@@ -66,9 +66,9 @@ import java.util.Map;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import net.micwin.tools4j.config.ConfigException;
-import net.micwin.tools4j.config.IConfiguration;
-import net.micwin.tools4j.config.MissingConfigKeyException;
+import net.micwin.yajl.core.config.ConfigException;
+import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.config.MissingConfigKeyException;
 
 
 /**

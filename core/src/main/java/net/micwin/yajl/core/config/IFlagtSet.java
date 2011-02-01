@@ -1,7 +1,7 @@
 /**
  * (c) 2007 M.Winkler, M�nchen, Germany
  */
-package net.micwin.tools4j.config;
+package net.micwin.yajl.core.config;
 
 import java.util.Collection;
 import java.util.Map;

@@ -47,16 +47,16 @@
  * Revision 1.1 2003/12/16 09:31:51 micwin initial check in
  */
 
-package net.micwin.tools4j.config.impl;
+package net.micwin.yajl.core.config.impl;
 
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import net.micwin.tools4j.config.FormatException;
-import net.micwin.tools4j.config.IConfiguration;
-import net.micwin.tools4j.config.MissingConfigKeyException;
+import net.micwin.yajl.core.config.FormatException;
+import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.config.MissingConfigKeyException;
 
 /**
  * Provides an in-memory configuration. To add some keys and values, use
@@ -72,7 +72,7 @@ public class InMemoryConfiguration implements IConfiguration {
     Map<String, Object> _values;
 
     /**
-         * @see net.micwin.tools4j.config.impl.AConfiguration#isStringTrimming()
+         * @see net.micwin.yajl.core.config.impl.AConfiguration#isStringTrimming()
          * @return <code>true</code> if leading and trailing white space will
          *         be removed.
          */
@@ -81,7 +81,7 @@ public class InMemoryConfiguration implements IConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#getString(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfiguration#getString(java.lang.String)
          */
     public String getString(String key) throws MissingConfigKeyException,
 	    FormatException {
@@ -105,7 +105,7 @@ public class InMemoryConfiguration implements IConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#sub(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfiguration#sub(java.lang.String)
          */
     public IConfiguration sub(String key) throws MissingConfigKeyException,
 	    FormatException {
@@ -114,7 +114,7 @@ public class InMemoryConfiguration implements IConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#getBoolean(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfiguration#getBoolean(java.lang.String)
          */
     public Boolean getBoolean(String key) throws MissingConfigKeyException,
 	    FormatException {
@@ -128,7 +128,7 @@ public class InMemoryConfiguration implements IConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#getInteger(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfiguration#getInteger(java.lang.String)
          */
     public Integer getInteger(String key) throws MissingConfigKeyException,
 	    FormatException {
@@ -142,7 +142,7 @@ public class InMemoryConfiguration implements IConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#getArray(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfiguration#getArray(java.lang.String)
          */
     public String[] getArray(String key) throws MissingConfigKeyException,
 	    FormatException {
@@ -157,7 +157,7 @@ public class InMemoryConfiguration implements IConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#assertAvailable(java.lang.String[])
+         * @see net.micwin.yajl.core.config.IConfiguration#assertAvailable(java.lang.String[])
          */
     public void assertAvailable(String[] keys) throws MissingConfigKeyException {
 	List<String> checkList = new LinkedList<String>();
@@ -172,7 +172,7 @@ public class InMemoryConfiguration implements IConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#getPathString()
+         * @see net.micwin.yajl.core.config.IConfiguration#getPathString()
          */
     public String getPathString() {
 	return _path;
@@ -229,14 +229,14 @@ public class InMemoryConfiguration implements IConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#keys()
+         * @see net.micwin.yajl.core.config.IConfiguration#keys()
          */
     public String[] keys() {
 	return (String[]) _values.keySet().toArray(new String[_values.size()]);
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#getBoolean(java.lang.String,
+         * @see net.micwin.yajl.core.config.IConfiguration#getBoolean(java.lang.String,
          *      java.lang.Boolean)
          */
     public Boolean getBoolean(String key, Boolean defaultBool)
@@ -249,7 +249,7 @@ public class InMemoryConfiguration implements IConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#getInteger(java.lang.String,
+         * @see net.micwin.yajl.core.config.IConfiguration#getInteger(java.lang.String,
          *      java.lang.Integer)
          */
     public Integer getInteger(String key, Integer defaultInt)
@@ -262,7 +262,7 @@ public class InMemoryConfiguration implements IConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#getString(java.lang.String,
+         * @see net.micwin.yajl.core.config.IConfiguration#getString(java.lang.String,
          *      java.lang.String)
          */
     public String getString(String key, String defaultString)
@@ -275,7 +275,7 @@ public class InMemoryConfiguration implements IConfiguration {
     }
 
     /**
-         * @see net.micwin.tools4j.config.IConfiguration#getArray(java.lang.String,
+         * @see net.micwin.yajl.core.config.IConfiguration#getArray(java.lang.String,
          *      java.lang.String[])
          */
     public String[] getArray(String key, String[] defaultArray)

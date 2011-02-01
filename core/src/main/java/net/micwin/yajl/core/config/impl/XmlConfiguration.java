@@ -33,7 +33,7 @@
  *  
  */
 
-package net.micwin.tools4j.config.impl;
+package net.micwin.yajl.core.config.impl;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -49,8 +49,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.FactoryConfigurationError;
 import javax.xml.parsers.ParserConfigurationException;
 
-import net.micwin.tools4j.config.IConfiguration;
-import net.micwin.tools4j.config.MissingConfigKeyException;
+import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.config.MissingConfigKeyException;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -229,7 +229,7 @@ public final class XmlConfiguration implements IConfiguration {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#getBoolean(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfiguration#getBoolean(java.lang.String)
          */
     public Boolean getBoolean(String key) throws MissingConfigKeyException {
 	String boolString = (String) _keys.get(key);
@@ -242,7 +242,7 @@ public final class XmlConfiguration implements IConfiguration {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#getBoolean(java.lang.String,
+         * @see net.micwin.yajl.core.config.IConfiguration#getBoolean(java.lang.String,
          *      java.lang.Boolean)
          */
     public Boolean getBoolean(String key, Boolean defaultBool) {
@@ -256,7 +256,7 @@ public final class XmlConfiguration implements IConfiguration {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#getInteger(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfiguration#getInteger(java.lang.String)
          */
     public Integer getInteger(String key) throws MissingConfigKeyException {
 	String value = (String) _keys.get(key);
@@ -269,7 +269,7 @@ public final class XmlConfiguration implements IConfiguration {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#getInteger(java.lang.String,
+         * @see net.micwin.yajl.core.config.IConfiguration#getInteger(java.lang.String,
          *      java.lang.Integer)
          */
     public Integer getInteger(String key, Integer defaultInt) {
@@ -283,7 +283,7 @@ public final class XmlConfiguration implements IConfiguration {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#getString(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfiguration#getString(java.lang.String)
          */
     public String getString(String key) throws MissingConfigKeyException {
 	String value = (String) _keys.get(key);
@@ -296,7 +296,7 @@ public final class XmlConfiguration implements IConfiguration {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#getString(java.lang.String,
+         * @see net.micwin.yajl.core.config.IConfiguration#getString(java.lang.String,
          *      java.lang.String)
          */
     public String getString(String key, String defaultString) {
@@ -310,7 +310,7 @@ public final class XmlConfiguration implements IConfiguration {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#getArray(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfiguration#getArray(java.lang.String)
          */
     public String[] getArray(String key) throws MissingConfigKeyException {
 	String[] array = (String[]) _arrays.get(key);
@@ -323,7 +323,7 @@ public final class XmlConfiguration implements IConfiguration {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#getArray(java.lang.String,
+         * @see net.micwin.yajl.core.config.IConfiguration#getArray(java.lang.String,
          *      java.lang.String[])
          */
     public String[] getArray(String key, String[] defaultArray) {
@@ -338,7 +338,7 @@ public final class XmlConfiguration implements IConfiguration {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#assertAvailable(java.lang.String[])
+         * @see net.micwin.yajl.core.config.IConfiguration#assertAvailable(java.lang.String[])
          */
     public void assertAvailable(String[] keys) throws MissingConfigKeyException {
 	if ((_keys == null) || (_keys.size() == 0)) {
@@ -361,7 +361,7 @@ public final class XmlConfiguration implements IConfiguration {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#getPath()
+         * @see net.micwin.yajl.core.config.IConfiguration#getPath()
          */
     public String getPathString() {
 	return _path;
@@ -370,7 +370,7 @@ public final class XmlConfiguration implements IConfiguration {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#sub(java.lang.String)
+         * @see net.micwin.yajl.core.config.IConfiguration#sub(java.lang.String)
          */
     public IConfiguration sub(String key) throws MissingConfigKeyException {
 	XmlConfiguration value = (XmlConfiguration) _subs.get(key);
@@ -383,7 +383,7 @@ public final class XmlConfiguration implements IConfiguration {
     /*
          * (non-Javadoc)
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#keys()
+         * @see net.micwin.yajl.core.config.IConfiguration#keys()
          */
     public String[] keys() {
 	Set<String> keySet = _keys.keySet();

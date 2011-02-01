@@ -46,7 +46,7 @@
  * Revision 1.1 2003/12/16 09:31:22 micwin Basis-Klasse f�r Konfigurationen
  */
 
-package net.micwin.tools4j.config.impl;
+package net.micwin.yajl.core.config.impl;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -56,12 +56,12 @@ import java.util.List;
 import java.util.Properties;
 
 import net.micwin.tools4j.StringFactory;
-import net.micwin.tools4j.config.FormatException;
-import net.micwin.tools4j.config.IConfiguration;
-import net.micwin.tools4j.config.MissingConfigKeyException;
 import net.micwin.tools4j.data.StreamFactory;
 import net.micwin.tools4j.data.structures.HierarchyPath;
 import net.micwin.tools4j.exceptions.TechException;
+import net.micwin.yajl.core.config.FormatException;
+import net.micwin.yajl.core.config.IConfiguration;
+import net.micwin.yajl.core.config.MissingConfigKeyException;
 
 /**
  * An abstract implementation of most of the methods of
@@ -239,7 +239,7 @@ public abstract class AConfiguration implements IConfiguration {
          * Returns a configuration value as a string. If the string isnt
          * present, then <code>defaultValue</code> is returned.
          * 
-         * @see net.micwin.tools4j.config.IConfiguration#getString(java.lang.String,
+         * @see net.micwin.yajl.core.config.IConfiguration#getString(java.lang.String,
          *      java.lang.String)
          */
     public String getString(String key, String defaultString) {

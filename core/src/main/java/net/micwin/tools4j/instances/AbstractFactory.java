@@ -3,9 +3,9 @@ package net.micwin.tools4j.instances;
 import java.util.HashMap;
 import java.util.Map;
 
-import net.micwin.tools4j.config.ConfigException;
-import net.micwin.tools4j.config.ConfigManager;
-import net.micwin.tools4j.config.IConfiguration;
+import net.micwin.yajl.core.config.ConfigException;
+import net.micwin.yajl.core.config.ConfigManager;
+import net.micwin.yajl.core.config.IConfiguration;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

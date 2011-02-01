@@ -26,9 +26,9 @@
  */
 package net.micwin.tools4j.profiling;
 
-import net.micwin.tools4j.config.ConfigException;
-import net.micwin.tools4j.config.IConfiguration;
 import net.micwin.tools4j.frameworks.IFramework;
+import net.micwin.yajl.core.config.ConfigException;
+import net.micwin.yajl.core.config.IConfiguration;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -54,7 +54,7 @@ public final class ProfilingFramework implements IFramework {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * net.micwin.tools4j.frameworks.IFramework#init(net.micwin.tools4j.config
+	 * net.micwin.tools4j.frameworks.IFramework#init(net.micwin.yajl.core.config
 	 * .IConfiguration)
 	 */
 	public void init(IConfiguration initialConfig) throws ConfigException {

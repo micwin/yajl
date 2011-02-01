@@ -4,13 +4,13 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-import net.micwin.yajl.core.config.Configuration;
+import net.micwin.yajl.core.config.IConfiguration;
 
 /**
  * This is a singleton for convenient access to some elements of yajl-core. Note
  * that you have to activate this explicisely by setting the system property
  * <code>YajlCoreSingleton.rootConfigClass</code> to a class implementing
- * {@link Configuration} and providing a default constructor.
+ * {@link IConfiguration} and providing a default constructor.
  * 
  * If not done, calls to this class result in <code>IllegalStateException</code>
  * . Note that, for classes outside this package, there is no chance in finding
@@ -22,7 +22,7 @@ import net.micwin.yajl.core.config.Configuration;
  */
 public class YajlCoreSingleton {
 
-	static Configuration rootConfig;
+	static IConfiguration rootConfig;
 
 	static {
 
@@ -49,7 +49,7 @@ public class YajlCoreSingleton {
 			Arrays.fill(paramTypes, String.class);
 
 			String[] params = new String[paramTypes.length];
-			rootConfig = (Configuration) rootConfigClass.getConstructor(
+			rootConfig = (IConfiguration) rootConfigClass.getConstructor(
 					paramTypes).newInstance(params);
 
 		} catch (ClassNotFoundException e) {
@@ -83,7 +83,7 @@ public class YajlCoreSingleton {
 	 * 
 	 * @return
 	 */
-	public static synchronized Configuration getRootConfig() {
+	public static synchronized IConfiguration getRootConfig() {
 		checkEnabled();
 		return rootConfig;
 	}

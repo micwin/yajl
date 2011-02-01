@@ -1,4 +1,4 @@
-package net.micwin.tools4j.config;
+package net.micwin.yajl.core.config;
 
 import java.io.IOException;
 
